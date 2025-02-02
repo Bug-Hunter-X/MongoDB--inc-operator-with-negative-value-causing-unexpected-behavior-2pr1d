@@ -1,0 +1,2 @@
+# MongoDB $inc Operator with Negative Value
+This repository demonstrates a potential issue when using the `$inc` operator in MongoDB with a negative value.  The `$inc` operator is commonly used to increment numeric fields, but using a negative value requires careful handling of potential race conditions and initial values. The `bug.js` file showcases this issue, while `bugSolution.js` presents a solution using atomic operations to ensure data integrity.
